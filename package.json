@@ -1,0 +1,19 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "main": "yes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiyaaJhawar/appdemo.git"
+  },
+  "author": "SiyaaJhawar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiyaaJhawar/appdemo/issues"
+  },
+  "homepage": "https://github.com/SiyaaJhawar/appdemo#readme",
+  "description": ""
+}
