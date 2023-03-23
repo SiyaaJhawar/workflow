@@ -2,7 +2,7 @@ name: "My Action"
 description: "This is a sample action"
 inputs:
   input1:
-    description: "A sample input"
+    description: "issue openend"
     required: true
   input2:
     description: "Another sample input"
@@ -11,4 +11,4 @@ outputs:
   output1:
     description: "A sample output"
 runs:
-   node index.js
+  node index.js
