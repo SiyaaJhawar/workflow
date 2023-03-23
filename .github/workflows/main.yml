@@ -8,13 +8,14 @@ jobs:
   run-my-action:
     runs-on: ubuntu-latest
     steps:
-    - name: Run my app's action
-      uses: SiyaaJhawar/workflow@main
-      with:
-        issue-number: ${{ github.event.issue.number }}
-
     -  uses: actions/checkout@v2
        with:
          repository: SiyaaJhawar/workflow # replace this with the name of your action repository
       
     -    uses: ./
+    - name: Run my app's action
+      uses: SiyaaJhawar/workflow@main
+      with:
+        issue-number: ${{ github.event.issue.number }}
+
+    
