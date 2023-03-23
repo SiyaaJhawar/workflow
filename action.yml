@@ -11,4 +11,4 @@ outputs:
   output1:
     description: "A sample output"
 runs:
- node index.js
+   node index.js
