@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run my app's action
-      uses: workflow/actions@v1
+      uses: SiyaaJhawar/workflow@v2
       with:
         issue-number: ${{ github.event.issue.number }}
