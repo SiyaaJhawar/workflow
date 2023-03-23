@@ -1,0 +1,19 @@
+name: My Reusable Workflow
+
+on:
+  repository_dispatch:
+    types: my-custom-event
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Hello, world!"
+      - name: Step 2
+        run: echo "This is my reusable workflow"
+curl -X POST \
+  -H "Accept: application/vnd.github.everest-preview+json" \
+  -H "Authorization: Bearer " \
+  "https://api.github.com/repos/SiyaaJhawar/workflow/dispatches" \
+  -d '{"event_type": "my-custom-event"}'
