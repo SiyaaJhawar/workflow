@@ -12,8 +12,9 @@ jobs:
         run: echo "Hello, world!"
       - name: Step 2
         run: echo "This is my reusable workflow"
+        
 curl -X POST \
-  -H "Accept: application/vnd.github.everest-preview+json" \
-  -H "Authorization: Bearer " \
-  "https://api.github.com/repos/SiyaaJhawar/workflow/dispatches" \
-  -d '{"event_type": "my-custom-event"}'
+      
+         -H "Authorization: Bearer MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uMzU0NDkxNTk=" \
+         "https://api.github.com/repos/SiyaaJhawar/workflow/dispatches" \
+         -d '{"event_type": "my-custom-event"}'
