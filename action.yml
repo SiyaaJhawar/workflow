@@ -11,4 +11,5 @@ outputs:
   output1:
     description: "A sample output"
 runs:
-  node index.js
+ using: 'node16'
+  main: 'index.js'
