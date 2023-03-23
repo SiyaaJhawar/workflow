@@ -1,0 +1,12 @@
+name: "My Action"
+description: "This is a sample action"
+inputs:
+  input1:
+    description: "A sample input"
+    required: true
+  input2:
+    description: "Another sample input"
+    required: false
+outputs:
+  output1:
+    description: "A sample output"
