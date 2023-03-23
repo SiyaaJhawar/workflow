@@ -1,0 +1,14 @@
+name: Run workflow when app is hit
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  run-my-action:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run my app's action
+      uses: my-app/my-action@v3
+      with:
+        issue-number: ${{ github.event.issue.number }}
