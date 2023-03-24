@@ -17,4 +17,23 @@ module.exports = (app) => {
   });
     
 
+  if (context.event === "push" && context.payload.ref === "refs/heads/main") {
+    
+    const inputs = {
+      param1: "value1",
+      param2: "value2",
+    };
+
+   
+    const res = await context.octokit.request("POST /repos/SiyaaJhawar/workflow/actions/workflows/{workflow_id}/dispatches", {
+      owner: context.payload.repository.owner.login,
+      repo: context.payload.repository.name,
+      workflow_id: "your-workflow-id",
+      ref: "main",
+      inputs,
+    });
+
+    app.log.info(`Reusable workflow triggered: ${res.status}`);
+  }
+});
 };
